@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include<climits>
 using namespace std;
 
 void test(int arr1[], int arr2[], int size1, int size2)
@@ -13,6 +14,8 @@ void test(int arr1[], int arr2[], int size1, int size2)
             if (arr1[i] == arr2[j])
             {
                 ans.push_back(arr1[i]);
+                arr2[j]= INT_MIN;
+                break;
             }
         }
     }
