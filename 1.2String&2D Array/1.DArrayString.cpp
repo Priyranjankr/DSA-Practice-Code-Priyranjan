@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int Length(char input[]){
-    int size =0;
-    for(int i=0;input[i] != '\0';i++){
+int Length(char input[])
+{
+    int size = 0;
+    for (int i = 0; input[i] != '\0'; i++)
+    {
         size++;
     }
 
@@ -11,25 +13,28 @@ int Length(char input[]){
 }
 int main()
 {
-
-    char name[100];
-    cout << "Enter your name: ";
-    cin >> name;
-
-   cout<<"Length of char array is: "<<Length(name)<<endl;
+    char input[100];
+    cin >> input;
+    cout << input << endl;
     /*
-     name[4] = 'x';
+     char name[100];
+     cout << "Enter your name: ";
+     cin >> name;
 
-    cout << "Your name is: " << name << endl;
+    cout<<"Length of char array is: "<<Length(name)<<endl;
 
-    name[3]='d';
-    
-   
-    cout << "Your name is : " << name << endl;
+      name[4] = 'x';
 
-     name[1]='\0';
-     
-    cout << "Your name is: " << name << endl;
-    */
+     cout << "Your name is: " << name << endl;
+
+     name[3]='d';
+
+
+     cout << "Your name is : " << name << endl;
+
+      name[1]='\0';
+
+     cout << "Your name is: " << name << endl;
+     */
     return 0;
 }
