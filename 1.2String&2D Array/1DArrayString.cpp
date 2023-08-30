@@ -14,7 +14,9 @@ int Length(char input[])
 int main()
 {
     char input[100];
-    cin >> input;
+    // cin >> input;
+    //    cin.getline(input,100);
+    cin.getline(input, 100, 'o');
     cout << input << endl;
     /*
      char name[100];
