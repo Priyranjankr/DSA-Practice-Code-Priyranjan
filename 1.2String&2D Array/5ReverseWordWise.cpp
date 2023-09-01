@@ -43,9 +43,10 @@ void reverseWordWiseString(char input[])
 {
     reverseString(input);
     int i = 0;
-    int j = i;
-    while (input[j] !='\0')
+
+    while (input[i] != '\0')
     {
+        int j = i;
         while (input[j] != ' ')
         {
             j++;
